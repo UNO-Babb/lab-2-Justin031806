@@ -6,6 +6,7 @@
 # datetime will allow us to access the system date and time.
 import datetime
 
+
 def main():
   #getting current time from system, storing to variable
   now = datetime.datetime.now()
@@ -16,7 +17,14 @@ def main():
 
   #TODO:
   #Ask user for hours
+  hours=input("Enter hours:")
+  hours=int(hours)
+  futurehour=currentHour +hours
   #Ask user for minutes
+  minutes=input("Enter minutes:")
+  minutes=int(minutes)
+  futureminutes=currentMinute+minutes
+
 
   #Calculate the time after the user-supplied time has passed.
 
